@@ -1,0 +1,10 @@
+.no-todo-lists-found {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;    
+}
+
+.load-more-todo-lists {
+    text-align: center;
+    margin-bottom: 40px;    
+}
