@@ -17,6 +17,24 @@ public class TodoListResponse {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private Boolean isCompleted;
 
+    public TodoListResponse(Long id, String name, List<TodoItemResponse> todoItems, UserSummary createdBy,
+                            Instant creationDateTime, Instant expirationDateTime, Boolean isExpired, Boolean isCompleted)
+    {
+        this.id=id;
+        this.name=name;
+        this.todoItems=todoItems;
+        this.createdBy=createdBy;
+        this.creationDateTime=creationDateTime;
+        this.expirationDateTime=expirationDateTime;
+        this.isExpired=isExpired;
+        this.isCompleted=isCompleted;
+    }
+
+    public TodoListResponse()
+    {
+
+    }
+
     public Long getId() {
         return id;
     }

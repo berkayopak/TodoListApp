@@ -45,6 +45,20 @@ public class TodoList extends UserDateAudit{
     @NotNull
     private Boolean status = false;
 
+    public TodoList()
+    {
+
+    }
+
+    public TodoList(Long id, String name, List<TodoItem> todoItems, Instant expirationDateTime, Boolean status)
+    {
+        this.id = id;
+        this.name = name;
+        this.todoItems = todoItems;
+        this.expirationDateTime = expirationDateTime;
+        this.status = status;
+    }
+
     public Long getId() {
         return id;
     }
