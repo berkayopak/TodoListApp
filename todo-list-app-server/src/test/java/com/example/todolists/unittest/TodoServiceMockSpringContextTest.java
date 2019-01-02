@@ -34,7 +34,7 @@ public class TodoServiceMockSpringContextTest {
     TodoService todoServiceImpl;
 
     @Test
-    public void testFindTheGreatestFromAllData() {
+    public void testGetTodoListById() {
         Instant nowDate = Instant.now();
         Long idLong = Long.valueOf(1);
         UserSummary userSummary = new UserSummary(idLong,"xyzxyzxyz","xyzxyz");
